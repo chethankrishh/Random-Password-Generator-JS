@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+}
+
+.container {
+  background: #ffffff;
+  padding: 30px;
+  width: 100%;
+  max-width: 400px;
+  border-radius: 12px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.container h1 {
+  font-size: 22px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+#passwordDisplay {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+#passwordDisplay:focus {
+  outline: none;
+  border-color: #667eea;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  font-size: 15px;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+#generateBtn {
+  background: #667eea;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+#generateBtn:hover {
+  background: #5a6fdc;
+}
+
+#copyBtn {
+  background: #2ecc71;
+  color: #fff;
+}
+
+#copyBtn:hover {
+  background: #27ae60;
+}
+
+#clearBtn {
+  background: #e74c3c;
+  color: #fff;
+  margin-top: 10px;
+}
+
+/* Mobile Responsive */
+@media (max-width: 480px) {
+  .container {
+    padding: 20px;
+  }
+
+  .container h1 {
+    font-size: 20px;
+  }
+}
